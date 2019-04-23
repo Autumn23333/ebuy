@@ -1,0 +1,29 @@
+<html>
+	<head>
+		<title>
+			
+		</title>
+	</head>
+<body>
+	<h3>Please input keyword:</h3>
+	<form action='login_check.php' method='POST'>
+	username:<input type='text' name='username' id='username'>
+	</br>
+	password:<input type='password' name='password' id='password'>
+	<br/>
+	<input type='submit' value='submit' onclick="return test()">
+	</form>
+</body>
+
+<script type="text/javascript">
+	//test if the password is empty
+function test() {
+	var pwd = document.getElementById("password").value;
+	if(pwd=='')
+	{
+		alert("Please input password");
+		return false;
+	}
+}
+</script>
+</html>
